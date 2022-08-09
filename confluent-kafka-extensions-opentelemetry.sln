@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Confluent.Kafka.Extensions.OpenTelemetry", "src\Confluent.Kafka.Extensions.OpenTelemetry\Confluent.Kafka.Extensions.OpenTelemetry.csproj", "{A40FCB06-A4C7-4B8C-A2AE-2296A7BE2A1A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{DADFA6D5-D56A-4509-906F-472E2D48A9C7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A40FCB06-A4C7-4B8C-A2AE-2296A7BE2A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40FCB06-A4C7-4B8C-A2AE-2296A7BE2A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40FCB06-A4C7-4B8C-A2AE-2296A7BE2A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40FCB06-A4C7-4B8C-A2AE-2296A7BE2A1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal
