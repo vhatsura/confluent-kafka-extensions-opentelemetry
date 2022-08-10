@@ -1,0 +1,7 @@
+{
+  "threshold": 16,
+  "ignore": [
+    "**/.github/**",
+    "**/tests/**"
+  ]
+}
