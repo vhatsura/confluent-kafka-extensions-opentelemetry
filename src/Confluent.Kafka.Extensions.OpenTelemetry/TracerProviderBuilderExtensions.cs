@@ -1,4 +1,4 @@
-﻿using OpenTelemetry.Trace;
+using OpenTelemetry.Trace;
 
 namespace Confluent.Kafka.Extensions.OpenTelemetry;
 
