@@ -4,8 +4,8 @@ name: Publish NuGet package
 on:
   release:
     types: [ published ]
-  push:
-    branches: [ main ]
+#  push:
+#    branches: [ main ]
 
 jobs:
 
@@ -46,5 +46,5 @@ jobs:
           name: nuget-symbol-packages
           path: ./nupkgs/*.snupkg
 
-#      - name: Push
-#        run: dotnet nuget push './nupkgs/*.nupkg' -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+      - name: Push
+        run: dotnet nuget push './nupkgs/*.nupkg' -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
