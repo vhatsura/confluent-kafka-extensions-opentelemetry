@@ -25,8 +25,7 @@ builder.Services.AddSingleton(_ =>
     return new ConsumerBuilder<Ignore, WeatherForecast>(
             new ConsumerConfig(new ClientConfig { BootstrapServers = kafkaServers })
             {
-                GroupId = "group1",
-                AutoOffsetReset = AutoOffsetReset.Earliest
+                GroupId = "group1", AutoOffsetReset = AutoOffsetReset.Earliest
             })
         .SetValueDeserializer(new KafkaJsonSerializer<WeatherForecast>())
         .Build();
@@ -34,7 +33,7 @@ builder.Services.AddSingleton(_ =>
 
 builder.Services.AddHostedService<WeatherForecastConsumerService>();
 
-builder.Services.AddOpenTelemetryTracing(traceBuilder =>
+builder.Services.AddOpenTelemetry().WithTracing(traceBuilder =>
 {
     traceBuilder.AddSource("webExample")
         .SetResourceBuilder(ResourceBuilder.CreateDefault()

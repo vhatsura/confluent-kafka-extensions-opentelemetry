@@ -66,7 +66,7 @@ using Confluent.Kafka.Extensions.OpenTelemetry;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
-builder.Services.AddOpenTelemetryTracing(traceBuilder =>
+builder.Services.AddOpenTelemetry().WithTracing(traceBuilder =>
 {
     traceBuilder
         .AddInMemoryExporter()
