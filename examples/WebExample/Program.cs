@@ -34,7 +34,7 @@ builder.Services.AddSingleton(_ =>
 
 builder.Services.AddHostedService<WeatherForecastConsumerService>();
 
-builder.Services.AddOpenTelemetryTracing(traceBuilder =>
+builder.Services.AddOpenTelemetry().WithTracing(traceBuilder =>
 {
     traceBuilder.AddSource("webExample")
         .SetResourceBuilder(ResourceBuilder.CreateDefault()
