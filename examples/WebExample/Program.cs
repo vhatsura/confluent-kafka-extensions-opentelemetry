@@ -48,6 +48,7 @@ builder.Services.AddOpenTelemetry().WithTracing(traceBuilder =>
         {
             o.Endpoint = new Uri("http://localhost:9411/api/v2/spans");
         })
+        .AddOtlpExporter()
         .AddHttpClientInstrumentation()
         .AddAspNetCoreInstrumentation()
         .AddConfluentKafkaInstrumentation();
